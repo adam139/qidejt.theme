@@ -32,9 +32,9 @@ setup(
     author_email='yuejun.tang@gmail.com',
     url='https://pypi.python.org/pypi/qidejt.theme',
     license='GPL version 2',
-    packages=find_packages('src', exclude=['ez_setup']),
+    packages=find_packages(exclude=['ez_setup']),
     namespace_packages=['qidejt'],
-    package_dir={'': 'src'},
+#     package_dir={'': 'src'},
     include_package_data=True,
     zip_safe=False,
     install_requires=[
