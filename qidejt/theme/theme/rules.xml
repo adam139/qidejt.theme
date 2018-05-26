@@ -38,7 +38,7 @@
   <copy attributes="*" css:content="body" css:theme="body" />
 
   <!-- move global nav -->
-  <replace css:theme-children="#nav" css:content-children="#portal-globalnav" />
+  <replace css:theme-children="#nav" css:content-children="#portal-globalnav-collapse" />
 
   <!-- full-width breadcrumb -->
   <replace css:content="#viewlet-above-content" css:theme="#above-content" />
@@ -47,40 +47,19 @@
 
   <drop
     css:theme="#front-page-slider"
-    css:if-not-content=".section-front-page"
+    css:if-not-content=".template-index-html"
     />
 
-<!-- Title & Description on front page -->
-<rules css:if-content=".section-front-page">
-  <drop css:theme=".brand-before" />
-
-  <replace
-      css:theme-children=".brand-name"
-      css:content-children=".documentFirstHeading"
-      method="raw"
-      />
-  <drop css:content=".documentFirstHeading" />
-
-  <replace
-    css:theme="#front-page-slider h2"
-    css:content=".documentDescription"
-    method="raw"
-    />
-  <drop css:content=".documentDescription" />
-</rules>
 
 <!-- Front Page Slider 
 <replace
     css:theme="#carousel-generic"
     css:content="#carousel-generic"
     href="/slider-images/@@slider-images"
-    css:if-content=".section-front-page"
+    css:if-content=".section-index-html"
     />
     -->
-<drop
-    css:theme="#front-page-slider"
-    css:if-not-content=".section-front-page"
-    />
+
 
   <!-- Central column -->
   <replace css:theme="#content-container" method="raw">

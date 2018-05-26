@@ -92,7 +92,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-postcss');
 
     // CWD to theme folder
-    grunt.file.setBase('./src/qidejt/theme/theme');
+    grunt.file.setBase('./qidejt/theme/theme');
 
     grunt.registerTask('compile', ['less', 'postcss']);
     grunt.registerTask('default', ['compile']);
