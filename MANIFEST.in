@@ -1,4 +1,4 @@
-graft src/qidejt
-graft docs
-include *.rst
+recursive-include qidejt *
+include *
 global-exclude *.pyc
+prune design

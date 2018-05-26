@@ -1,7 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <layers>
-  <layer
-      name="qidejt.theme"
-      interface="qidejt.theme.interfaces.IQidejtThemeLayer"
-      />
+    
+    <!-- Enable the Diazo960 Theme layer when installed -->
+    
+    <layer
+        name="qidejt.theme"
+        interface="qidejt.theme.interfaces.IThemeSpecific"
+        />
+
 </layers>

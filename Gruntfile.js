@@ -14,52 +14,32 @@ module.exports = function (grunt) {
                     strictMath: false,
                     sourceMap: true,
                     outputSourceFiles: true,
-                    sourceMapFileInline: true,
-                    sourceMapURL: '++theme++qidejt/less/theme-compiled.less.map',
-                    sourceMapFilename: 'less/theme-compiled.less.map',
+                    sourceMapURL: '++theme++qidejt.theme/less/barceloneta-compiled.css.map',
+                    sourceMapFilename: 'qidejt/theme/theme/less/barceloneta-compiled.css.map',
                     modifyVars: {
                         "isPlone": "false"
                     }
                 },
                 files: {
-                    'less/theme-compiled.css': 'less/theme.local.less',
+                    'qidejt/theme/theme/less/barceloneta-compiled.css': 'qidejt/theme/theme/less/barceloneta.plone.local.less',
                 }
             }
         },
-        postcss: {
-            options: {
-                map: true,
-                processors: [
-                    require('autoprefixer')({
-                        browsers: ['last 2 versions']
-                    })
-                ]
-            },
-            dist: {
-                src: 'less/*.css'
-            }
-        },
+
         watch: {
             scripts: {
-                files: [
-                    'less/*.less',
-                    'barceloneta/less/*.less'
-                ],
-                tasks: ['less', 'postcss']
+                files: ['qidejt/theme/theme/less/*.less'],
+                tasks: ['less']
             }
         },
         browserSync: {
             html: {
                 bsFiles: {
-                    src : [
-                      'less/*.less',
-                      'barceloneta/less/*.less'
-                    ]
+                    src : ['qidejt/theme/theme/less/*.less']
                 },
                 options: {
                     watchTask: true,
                     debugInfo: true,
-                    online: true,
                     server: {
                         baseDir: "."
                     },
@@ -67,35 +47,22 @@ module.exports = function (grunt) {
             },
             plone: {
                 bsFiles: {
-                    src : [
-                      'less/*.less',
-                      'barceloneta/less/*.less'
-                    ]
+                    src : ['qidejt/theme/theme/less/*.less']
                 },
                 options: {
                     watchTask: true,
                     debugInfo: true,
-                    proxy: "localhost:8080",
-                    reloadDelay: 3000,
-                    // reloadDebounce: 2000,
-                    online: true
+                    proxy: "localhost:8080"
                 }
             }
         }
     });
 
-
     // grunt.loadTasks('tasks');
     grunt.loadNpmTasks('grunt-browser-sync');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-less');
-    grunt.loadNpmTasks('grunt-postcss');
-
-    // CWD to theme folder
-    grunt.file.setBase('./qidejt/theme/theme');
-
-    grunt.registerTask('compile', ['less', 'postcss']);
-    grunt.registerTask('default', ['compile']);
+    grunt.registerTask('default', ['watch']);
     grunt.registerTask('bsync', ["browserSync:html", "watch"]);
     grunt.registerTask('plone-bsync', ["browserSync:plone", "watch"]);
 };

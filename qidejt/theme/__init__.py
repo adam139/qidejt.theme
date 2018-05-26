@@ -1,6 +1,3 @@
-# -*- coding: utf-8 -*-
-"""Init and utils."""
+import logging
+logger = logging.getLogger('qidejt.theme')
 
-from zope.i18nmessageid import MessageFactory
-
-_ = MessageFactory('qidejt.theme')

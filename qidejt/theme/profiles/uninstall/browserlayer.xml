@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <layers>
-  <layer
-      name="qidejt.theme"
-      remove="true"
-      />
+    
+    <!-- Disable the Theme layer when uninstalled -->
+    
+    <layer
+        name="qidejt.theme"
+        interface="qidejt.theme.browser.interfaces.IThemeSpecific"
+        remove="True"
+        />
+
 </layers>
