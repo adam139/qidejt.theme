@@ -2757,17 +2757,6 @@ fieldset[disabled] .link-parent.active {
   font-weight: 300;
   box-shadow: inset 0 10px 10px -10px rgba(0, 0, 0, 0.05);
 }
-.plone-navbar {
-  background: rgba(0, 0, 0, 0) url("http://images.315ok.org/qidejt/images/menubg_4_43.jpg") repeat-x scroll 0 0;
-  border: 1px solid transparent;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.17);
-  color: white;
-  height: 43px;
-  margin-bottom: 20px;
-  margin-top: -7px;
-  min-height: 43px;
-  position: relative;
-}
 .portletNavigationTree nav.portletContent > ul > li a {
   padding: 10px 15px 10px 15px;
   border-top: 1px solid #1663cc;
@@ -3927,7 +3916,7 @@ ul.picker__list {
   }
 }
 .plone-navbar-nav {
-  margin: -5px -9px -3px;
+  margin: 0 -9px 0;
 }
 .plone-navbar-nav > li > a {
   padding-top: 10px;
