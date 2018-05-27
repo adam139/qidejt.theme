@@ -2568,9 +2568,8 @@ fieldset[disabled] .link-parent.active {
   border-radius: 0 0 4px 4px;
 }
 .portlet .portletHeader {
-  background: url(http://images.315ok.org/qidejt/images/portletnavbg_7_41.jpg) repeat-x scroll 0 0 transparent;
+  background: #f2f1f1;
   font-weight: 500;
-  height: 41px;
   font-size: 18px;
   padding: 13px 15px;
   color: #696969;
@@ -2863,9 +2862,8 @@ fieldset[disabled] .link-parent.active {
   border-radius: 0 0 4px 4px;
 }
 .managedPortlet .portletHeader {
-  background: url(http://images.315ok.org/qidejt/images/portletnavbg_7_41.jpg) repeat-x scroll 0 0 transparent;
+  background: #f2f1f1;
   font-weight: 500;
-  height: 41px;
   font-size: 18px;
   padding: 13px 15px;
   color: #696969;
@@ -4161,9 +4159,8 @@ body.template-logged_out #content-core > :last-child {
 }
 body.template-login_form #content-core .portletHeader,
 body.template-logged_out #content-core .portletHeader {
-  background: url(http://images.315ok.org/qidejt/images/portletnavbg_7_41.jpg) repeat-x scroll 0 0 transparent;
+  background: #f2f1f1;
   font-weight: 500;
-  height: 41px;
   font-size: 18px;
   padding: 13px 15px;
   color: #696969;

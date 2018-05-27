@@ -7,17 +7,16 @@
 	box-shadow:  0 1px 3px rgba(0,0,0,.05);
 	> :first-child {border-radius: 4px 4px 0 0;}
 	> :last-child {border-radius: 0 0 4px 4px;}
-	.portletHeader {
-		background: url(http://images.315ok.org/qidejt/images/portletnavbg_7_41.jpg) repeat-x scroll 0 0 transparent;
-		font-weight: @plone-font-weight-bold;
-		height:41px;
-		font-size: @plone-font-size-large;
-		padding: 13px 15px;
-		color: @plone-portlet-header-color;
-		> a {
-		color: @plone-link-color-on-grey;
-		}
-	}
+  .portletHeader {
+    background: @plone-portlet-header-bg;
+    font-weight: @plone-font-weight-bold;
+    font-size: @plone-font-size-large;
+    padding: 13px 15px;
+    color: @plone-portlet-header-color;
+    > a {
+    color: @plone-link-color-on-grey;
+    }
+  }
 	&.portletCalendar .portletHeader {
 		text-align: center;
 		position: relative;
