@@ -152,7 +152,7 @@
         <p class="sign">&copy; 2017-<tal:year 
          tal:define="DateTime nocall:modules/DateTime.DateTime;
                      myTime python:DateTime()"
-         tal:content="python:myTime.year()" />&middot;湖南齐德企业管理<br/><a href="http://www.miibeian.gov.cn/">湘ICP备18009453号-1</a></p>
+         tal:content="python:myTime.year()" />&middot;湖南齐德企业管理<br/><a href="http://www.miibeian.gov.cn/">湘ICP备18010655号</a></p>
       </div>
     </div>
     </footer>
